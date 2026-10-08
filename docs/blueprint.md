@@ -6,7 +6,7 @@ Draft of 2026-10-08. The editable copy lives in the Claude Doc "App Pipeline Blu
 
 The pipeline takes a non-technical founder from an idea to a tested web or mobile app in 7 stages, and nothing moves forward until the founder approves. The founder never writes code or reads it; they answer questions, pick between options, try screens, and say yes or no.
 
-It runs as a Claude Code plugin with one command per stage. Each stage reads the files earlier stages wrote and adds its own, so the founder can stop and resume at any point.
+It ships two ways from the same skills: as a Claude Code plugin with one command per stage, and as skills added to a Claude Project, where the founder starts each stage by asking in chat. It stops once QA passes; deploying the app to production is out of scope. Each stage reads the files earlier stages wrote and adds its own, so the founder can stop and resume at any point.
 
 1. **Discover** (`/discover`): interview, market research, business plan
 2. **Validate** (`/validate`): requirements checked for gaps, screen list agreed
@@ -79,7 +79,7 @@ Skills used: design critique, UX copy, accessibility review, and the theme and a
 The founder approves a stack and a monthly cloud budget they understand, before any code exists.
 
 - **Decisions.** Platform (web, cross-platform mobile, or both), frontend and backend stack, database, sign-in, file storage, hosting, cloud provider, and third-party services such as payments, email, and maps.
-- **Explained choices.** Each decision is a short record with 2 or 3 options, the trade-offs in plain language, and a recommendation. The default leans toward managed services with free tiers, so a small launch costs little.
+- **Explained choices.** Each decision is a short record with 2 or 3 options, the trade-offs in plain language, and a recommendation. The default leans toward managed services with free tiers, so a small launch costs little. Mobile apps default to cross-platform React Native (one codebase for iPhone and Android) unless the founder has a hard requirement for another stack.
 - **Cost estimate.** A monthly cost per service at three usage levels (launch, growth, scale, with user counts taken from the business plan). Prices link to the provider's pricing page and carry the date they were checked.
 - **Approval gate.** The founder approves the architecture and the launch-level budget.
 
@@ -126,8 +126,8 @@ The app is released only after a full test run finds no open bugs.
 
 1. Generate a test plan from the requirements: every acceptance criterion becomes at least one test case, plus end-to-end journeys (sign up, the main task, payment if any), accessibility, basic performance, and a security scan.
 2. Run it: automated end-to-end tests in a real browser or device simulator, then an exploratory pass on each screen.
-3. Log each bug with steps to reproduce, a screenshot, and a severity (table below).
-4. Fix bugs highest severity first. Each fix goes through the same code and security review as stage 6.
+3. Log each bug as a GitHub issue in the app's repo, with steps to reproduce, a screenshot, and a severity label (table below).
+4. Fix bugs highest severity first. Each fix is a pull request that links its issue ("Fixes #12"), goes through the same code and security review as stage 6, and closes the issue automatically when it merges.
 5. Rerun the whole test plan, not only the fixed parts, to catch anything a fix broke.
 6. Repeat steps 3 to 5 until a full run is clean, then the founder signs off the release.
 
@@ -138,9 +138,13 @@ The app is released only after a full test run finds no open bugs.
 | Medium | A feature works with a workaround, or fails in an edge case | Search ignores accented letters |
 | Low | Cosmetic or wording | Button text cut off on small phones |
 
-## Open questions
+## Decisions
 
-- [ ] Should the pipeline run as a Claude Code plugin (assumed here), or inside a Claude Project?
-- [ ] Should it also deploy the finished app to production after QA? The current stage list ends at QA.
-- [ ] For mobile apps, is a cross-platform app (one codebase for iPhone and Android) acceptable as the default?
-- [ ] Should bugs live as GitHub issues in the app's repo, or in a file inside it?
+Diab settled these on 8 October 2026.
+
+| Question | Decision |
+| --- | --- |
+| Where does the pipeline run? | Both: a Claude Code plugin and skills for a Claude Project |
+| Does it deploy to production? | No, it ends when QA passes |
+| Mobile stack | Cross-platform React Native by default, unless the founder has a hard requirement |
+| Where do bugs live? | GitHub issues in the app's repo, linked from the fixing pull request and closed on merge |
