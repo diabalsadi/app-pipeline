@@ -1,0 +1,16 @@
+{
+  "name": "app-pipeline",
+  "owner": {
+    "name": "Diab Al Sadi"
+  },
+  "metadata": {
+    "description": "The app pipeline plugin: idea to tested app for non-technical founders."
+  },
+  "plugins": [
+    {
+      "name": "app-pipeline",
+      "source": "./",
+      "description": "Takes a non-technical founder from an idea to a tested web or mobile app in 7 approved stages."
+    }
+  ]
+}
