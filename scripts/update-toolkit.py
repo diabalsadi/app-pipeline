@@ -63,6 +63,8 @@ def write_marketplace() -> None:
             source = {"source": "git-subdir", "url": f"https://github.com/{e['repo']}.git", "path": e["path"], "sha": e["commit"]}
         else:
             source = {"source": "github", "repo": e["repo"], "sha": e["commit"]}
+            if "ref" in e:
+                source["ref"] = e["ref"]
         entry = {"name": e["name"], "source": source, "description": e["description"]}
         for key in ("strict", "skills"):
             if key in e:

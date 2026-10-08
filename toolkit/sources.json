@@ -223,6 +223,284 @@
       "license": "MIT",
       "licenseFile": "LICENSE",
       "description": "Clean Architecture and Domain-Driven Design guidance (library-first, separation of domain and infrastructure, small focused modules), written with .NET/C# examples. Use in the app pipeline's architect stage when shaping the code structure, or when the user asks for architecture principles."
+    },
+    {
+      "name": "code-review",
+      "stage": "build",
+      "repo": "mattpocock/skills",
+      "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "path": "skills/engineering/code-review",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "grill-me",
+      "stage": "validate",
+      "repo": "mattpocock/skills",
+      "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "path": "skills/productivity/grill-me",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "grilling",
+      "stage": "validate",
+      "repo": "mattpocock/skills",
+      "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "path": "skills/productivity/grilling",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "code-review-skill",
+      "stage": "build",
+      "repo": "awesome-skills/code-review-skill",
+      "commit": "4850184dfd7765ea7b3c5c4e9b6cf8e0815ee7cb",
+      "path": ".",
+      "license": "MIT",
+      "exclude": [
+        ".git",
+        "assets",
+        "index.html",
+        "index.en.html",
+        "README.md",
+        "CONTRIBUTING.md",
+        "scripts/test_pr_analyzer.py"
+      ]
+    },
+    {
+      "name": "react-native-expert",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/react-native-expert",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "react-expert",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/react-expert",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "nextjs-developer",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/nextjs-developer",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "typescript-pro",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/typescript-pro",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "postgres-pro",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/postgres-pro",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "code-reviewer",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/code-reviewer",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "security-reviewer",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/security-reviewer",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "secure-code-guardian",
+      "stage": "build",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/secure-code-guardian",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "debugging-wizard",
+      "stage": "qa",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/debugging-wizard",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "test-master",
+      "stage": "qa",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/test-master",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "playwright-expert",
+      "stage": "qa",
+      "repo": "jeffallan/claude-skills",
+      "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
+      "path": "skills/playwright-expert",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "quality-assurance",
+      "stage": "qa",
+      "repo": "jasonkneen/kiro",
+      "commit": "22577b636dc3095f774ace4c846034514d9fa071",
+      "path": "skills/quality-assurance",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "playwright-cli",
+      "stage": "qa",
+      "repo": "microsoft/playwright-cli",
+      "commit": "b85c7a736bb473bf55b584e54a09ffa698d6d871",
+      "path": "skills/playwright-cli",
+      "license": "Apache-2.0",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "qa-project-context",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/qa-project-context",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "test-strategy",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/test-strategy",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "risk-based-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/risk-based-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "playwright-automation",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/playwright-automation",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "mobile-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/mobile-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "accessibility-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/accessibility-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "visual-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/visual-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "security-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/security-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "performance-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/performance-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "payment-testing",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/payment-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "test-data-management",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/test-data-management",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "bug-reproduction",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/bug-reproduction",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "ai-bug-triage",
+      "stage": "qa",
+      "repo": "petrkindlmann/qa-skills",
+      "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
+      "path": "skills/ai-bug-triage",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
     }
   ]
 }

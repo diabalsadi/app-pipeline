@@ -55,20 +55,22 @@ docs/             the blueprint
 
 ## Bundled specialist skills
 
-The stages call on 24 third-party skills that ship inside this plugin, each pinned to a reviewed commit. `THIRD_PARTY_NOTICES.md` lists each one with its source and license.
+The stages call on 54 third-party skills that ship inside this plugin, each pinned to a reviewed commit. `THIRD_PARTY_NOTICES.md` lists each one with its source and license.
 
 | Stage | Skills |
 | --- | --- |
 | Discover | `mom-test`, `jobs-to-be-done`, `customer-research`, `competitor-profiling`, `obviously-awesome`, `blue-ocean-strategy`, `monetizing-innovation`, `pricing`, `lean-analytics`, `product-marketing`, `business-plan`, `market-researcher` |
 | Design | `frontend-design`, `ui-ux-pro-max`, `apple-design-system`, `brand-guidelines`, `refactoring-ui`, `web-typography`, `ios-hig-design`, `microinteractions`, `ux-heuristics` |
+| Validate | `grilling`, `grill-me` |
 | Architect | `drawio-skill`, `software-architecture` |
-| QA | `uat-testing` |
+| Build | `react-native-expert`, `react-expert`, `nextjs-developer`, `typescript-pro`, `postgres-pro`, `code-review`, `code-review-skill`, `code-reviewer`, `security-reviewer`, `secure-code-guardian` |
+| QA | `uat-testing`, `quality-assurance`, `qa-project-context`, `test-strategy`, `risk-based-testing`, `test-master`, `test-data-management`, `playwright-cli`, `playwright-automation`, `playwright-expert`, `mobile-testing`, `accessibility-testing`, `visual-testing`, `performance-testing`, `security-testing`, `payment-testing`, `bug-reproduction`, `ai-bug-triage`, `debugging-wizard` |
 
 To update one, change its commit in `toolkit/sources.json`, run `python3 scripts/update-toolkit.py`, and review the diff.
 
 ## Optional plugins
 
-This repo's marketplace also lists 16 whole plugins. They install straight from each author's repo at a pinned commit (`toolkit/extras.json`) and are not copied here. Install the ones you want after adding the marketplace, for example `/plugin install impeccable@app-pipeline`.
+This repo's marketplace also lists 26 whole plugins. They install straight from each author's repo at a pinned commit (`toolkit/extras.json`) and are not copied here. Install the ones you want after adding the marketplace, for example `/plugin install impeccable@app-pipeline`.
 
 | Plugin | What it adds | Source |
 | --- | --- | --- |
@@ -77,6 +79,10 @@ This repo's marketplace also lists 16 whole plugins. They install straight from 
 | `marketing-skills` | 40+ marketing skills: SEO, copy, launch, ads, onboarding, pricing | coreyhaines31/marketingskills |
 | `ccc-skills` | 15 skills: Excalidraw, landing pages, UAT testing, pitch decks, analytics setup | ooiyeefei/ccc |
 | `example-skills`, `document-skills` | Anthropic's skills: frontend design, web app testing, theme factory, Word, Excel, PowerPoint, PDF | anthropics/skills |
+| `differential-review`, `insecure-defaults`, `static-analysis`, `supply-chain-risk-auditor`, `sharp-edges`, `fp-check`, `spec-to-code-compliance` | Trail of Bits security review tools (CC BY-SA 4.0). `fp-check` adds a completeness check at the end of every turn | trailofbits/skills |
+| `fullstack-dev-skills` | All 67 full-stack skills and workflow commands | jeffallan/claude-skills |
+| `mattpocock-skills` | All of Matt Pocock's engineering skills: TDD, specs, tickets, domain modelling | mattpocock/skills |
+| `qa-skills` | All 40+ QA skills, including contract, chaos, and synthetic monitoring | petrkindlmann/qa-skills |
 | `product-strategy`, `ux-design`, `marketing-cro`, `sales-influence`, `product-innovation`, `strategy-growth`, `team-motivation`, `code-craftsmanship`, `systems-architecture`, `metaskills` | 10 book-based collections, about 70 skills in all | wondelai/skills |
 
 Each plugin adds its skills to every session, so install only the ones a project needs. In a Claude Project, only the bundled skills are packaged by `package-skills.sh`.

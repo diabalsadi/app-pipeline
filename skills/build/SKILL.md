@@ -13,12 +13,17 @@ Requires `setup` to be `approved`. Works from the `screens` list in `pipeline/st
 
 | Step | Skill | Use it for |
 | --- | --- | --- |
-| Build | `ui-ux-pro-max` | React Native and web implementation guidelines for the chosen stack |
-| Build | `microinteractions` | Feedback on taps, saves, and errors |
+| Start | `grilling` | Pinning down anything the screen's stories leave open before coding. Answer from the docs where you can; ask the founder only what you cannot |
+| Build | `react-native-expert` or `nextjs-developer`, with `react-expert` and `typescript-pro` | Implementation patterns for the chosen stack |
+| Build | `postgres-pro` | Tables, migrations, indexes, and row level security policies |
+| Build | `ui-ux-pro-max`, `microinteractions` | Stack-specific UI guidelines, and feedback on taps, saves, and errors |
 | Build | `threejs-skills` (optional plugin) | Only for a web screen that needs a 3D scene |
 | Polish | `impeccable` (optional plugin) | Its polish and audit commands before the founder sees the screen |
-| Code review | `code-review` or `engineering:code-review` | The standards review in step 5 |
-| Security review | `security-review` | The security review in step 5 |
+| Code review | `code-review` | The main review: Standards against `CLAUDE.md`, and Spec against the screen's stories and acceptance criteria. The spec source is `docs/02-requirements.md` |
+| Code review | `code-review-skill`, `code-reviewer` | Language guides (TypeScript, React) and the common-bugs checklist |
+| Security review | `security-reviewer`, `secure-code-guardian` | The security review in step 5, with the checklist |
+| Security review | `differential-review`, `insecure-defaults`, `sharp-edges`, `static-analysis`, `supply-chain-risk-auditor` (Trail of Bits optional plugins) | A deeper security pass when installed. Run `supply-chain-risk-auditor` whenever the change adds a dependency |
+| Security review | `fp-check` (optional plugin) | Confirming a security finding is real before acting on it |
 | Structure | `software-architecture` | Keeping logic in services and screens thin |
 
 ## The loop
@@ -53,8 +58,8 @@ Repeat for each screen in list order. A later screen may depend on an earlier on
 
 Set the screen to `in_review`. Run both reviews on the branch's diff against `main`, using the checklist in [references/review-checklist.md](references/review-checklist.md):
 
-1. **Code review** against `CLAUDE.md` and the checklist's standards section.
-2. **Security review** against the checklist's security section.
+1. **Code review** with the `code-review` skill, from `main` as the fixed point: Standards against `CLAUDE.md` and the checklist's standards section, and Spec against the screen's stories.
+2. **Security review** with `security-reviewer` against the checklist's security section, plus the Trail of Bits plugins if they are installed.
 
 Fix every finding that is a real problem. If a fix changes what the founder sees or does, go back to step 3 for that part. Rerun lint, typecheck, and tests after the fixes. Record each finding and its outcome for the pull request.
 

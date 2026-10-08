@@ -305,6 +305,157 @@
         "./skills/pitch-deck",
         "./skills/pitch-package"
       ]
+    },
+    {
+      "name": "differential-review",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/differential-review",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Security-focused differential review of code changes with git history analysis and blast radius estimation (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "insecure-defaults",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/insecure-defaults",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Detects insecure default configurations including hardcoded credentials, fallback secrets, weak authentication defaults, and dangerous values in production (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "static-analysis",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/static-analysis",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Static analysis toolkit with CodeQL, Semgrep, and SARIF parsing for security vulnerability detection (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "supply-chain-risk-auditor",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/supply-chain-risk-auditor",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Audit a project's npm, PyPI, and Go dependencies for supply-chain risk: version-matched advisories for direct dependencies and the full lockfile tree, abandoned upstreams, npm publisher concentration, and install scripts (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "sharp-edges",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/sharp-edges",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Identify error-prone APIs, dangerous configurations, and footgun designs that enable security mistakes (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "fp-check",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/fp-check",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Systematic false positive verification for security bug analysis with mandatory gate reviews Its Stop hook adds a completeness check at the end of every turn. (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "spec-to-code-compliance",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/trailofbits/skills.git",
+        "path": "plugins/spec-to-code-compliance",
+        "sha": "82fe8226252622fa807643bdca1710901198553a"
+      },
+      "description": "Check code against the documentation that specifies it: one agent per requirement, divergences refuted before they are reported, evidence cited to the line (Trail of Bits, CC BY-SA 4.0)"
+    },
+    {
+      "name": "fullstack-dev-skills",
+      "source": {
+        "source": "github",
+        "repo": "jeffallan/claude-skills",
+        "sha": "76455a6ec563061ce2630ab49335d0136f345d8b",
+        "ref": "plugin"
+      },
+      "description": "All 67 of Jeff Allan's full-stack skills: language experts, frameworks, infrastructure, security and testing, plus project workflow commands."
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills",
+        "sha": "b0618bc436ad893b3c5e84e55fba86586d34a404"
+      },
+      "description": "All of Matt Pocock's engineering skills: grilling, spec and ticket flows, TDD, code review, domain modelling and more."
+    },
+    {
+      "name": "qa-skills",
+      "source": {
+        "source": "github",
+        "repo": "petrkindlmann/qa-skills",
+        "sha": "b3bb61bd268b147476252c6ed5a0440c87b97441"
+      },
+      "description": "All of Petr Kindlmann's QA skills: test strategy, Playwright, mobile, visual, accessibility, performance, security, contract and chaos testing, bug triage and more.",
+      "strict": false,
+      "skills": [
+        "./skills/accessibility-testing",
+        "./skills/agentic-browser-testing",
+        "./skills/ai-bug-triage",
+        "./skills/ai-qa-review",
+        "./skills/ai-system-testing",
+        "./skills/ai-test-generation",
+        "./skills/analytics-tracking-testing",
+        "./skills/api-testing",
+        "./skills/bug-reproduction",
+        "./skills/chaos-engineering",
+        "./skills/ci-cd-integration",
+        "./skills/compliance-testing",
+        "./skills/contract-testing",
+        "./skills/coverage-analysis",
+        "./skills/cross-browser-testing",
+        "./skills/cypress-automation",
+        "./skills/database-testing",
+        "./skills/email-testing",
+        "./skills/exploratory-testing",
+        "./skills/mobile-testing",
+        "./skills/observability-driven-testing",
+        "./skills/payment-testing",
+        "./skills/performance-testing",
+        "./skills/playwright-automation",
+        "./skills/qa-dashboard",
+        "./skills/qa-do",
+        "./skills/qa-metrics",
+        "./skills/qa-project-bootstrap",
+        "./skills/qa-project-context",
+        "./skills/qa-report-humanizer",
+        "./skills/qa-start",
+        "./skills/quality-postmortem",
+        "./skills/release-readiness",
+        "./skills/risk-based-testing",
+        "./skills/security-testing",
+        "./skills/selector-drift-recovery",
+        "./skills/service-virtualization",
+        "./skills/shift-left-testing",
+        "./skills/synthetic-monitoring",
+        "./skills/test-case-management",
+        "./skills/test-data-management",
+        "./skills/test-environments",
+        "./skills/test-migration",
+        "./skills/test-planning",
+        "./skills/test-reliability",
+        "./skills/test-strategy",
+        "./skills/test-suite-curation",
+        "./skills/testing-in-production",
+        "./skills/unit-testing",
+        "./skills/visual-testing"
+      ]
     }
   ]
 }

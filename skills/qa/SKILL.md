@@ -13,11 +13,20 @@ Requires `build` to be `approved`.
 
 | Step | Skill | Use it for |
 | --- | --- | --- |
-| Test plan | `uat-testing` | Turning specs into exhaustive test cases and running them in a browser |
-| Web end-to-end | `webapp-testing` (in the optional `example-skills` plugin) | Driving the web app with Playwright |
-| Accessibility | `design:accessibility-review`, `ux-heuristics` | The accessibility and usability passes |
+| Context | `qa-project-context` | Writing `.agents/qa-project-context.md` from the requirements and architecture, so the QA skills below share the same facts |
+| Test plan | `quality-assurance`, `test-strategy`, `risk-based-testing` | Quality gates, choosing what to test hardest, and the right mix of unit, integration, and end-to-end tests |
+| Test plan | `uat-testing`, `test-master` | Turning acceptance criteria into exhaustive test cases |
+| Test data | `test-data-management` | Seed users and data for repeatable runs |
+| Web end-to-end | `playwright-cli`, `playwright-automation`, `playwright-expert` | Driving the browser, and writing stable Playwright tests. `webapp-testing` (optional `example-skills` plugin) also works |
+| Mobile end-to-end | `mobile-testing` | Maestro flows on simulators and emulators |
+| Specialised passes | `accessibility-testing`, `visual-testing`, `performance-testing`, `security-testing`, `payment-testing` | One pass each, where the app needs it |
+| Bugs | `bug-reproduction`, `ai-bug-triage` | Minimal reproduction steps, duplicate detection, and severity ranking (map the result onto `severity.md`) |
+| Fixing | `debugging-wizard` | Finding the root cause before fixing |
+| Compliance | `spec-to-code-compliance` (Trail of Bits optional plugin) | Checking the code against every requirement before the final run |
 | Polish | `impeccable` (optional plugin) | Its audit command as an extra pass on visual and UX quality |
-| Fix review | `code-review`, `security-review` | Reviewing every fix, as in the build stage |
+| Fix review | `code-review`, `security-reviewer` | Reviewing every fix, as in the build stage |
+
+The whole `qa-skills` collection is also available as an optional plugin.
 
 ## Steps
 
@@ -35,7 +44,7 @@ Show the founder a short summary: how many cases there are, what is automated, a
 ### 2. Automate what can be automated
 
 - **Mobile:** Maestro flows in `.maestro/`, one per journey, run on an iOS simulator or Android emulator.
-- **Web:** Playwright tests in `e2e/`.
+- **Web:** Playwright tests in `e2e/`. Use the project's own Playwright (`npx playwright`) for `playwright-cli` commands; install the global CLI (`npm install -g @playwright/cli`) only if the project has none.
 - Unit and component tests already exist from the build stage. Add any acceptance criterion that is still missing.
 - Add the end-to-end run to CI if it can run there. If it needs a device, run it locally and attach the results to the test run file.
 
