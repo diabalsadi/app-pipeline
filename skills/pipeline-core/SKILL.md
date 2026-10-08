@@ -50,6 +50,14 @@ Every stage ends at a gate, and nothing moves on without the founder's explicit 
 4. On changes: make them, show what changed, and ask again.
 5. On approval: record it in the state file with the date, then name the next stage and offer to start it. Do not start it on your own.
 
+## Specialist skills
+
+Each stage names specialist skills bundled with this plugin (listed in `THIRD_PARTY_NOTICES.md`). Load one when its step comes up. They supply method and depth, while the stage skill stays in charge:
+
+- The stage's templates, file locations, and approval gate always win. A specialist skill's output is folded into the stage's own files, not saved somewhere else.
+- The founder rules below still apply, so translate a specialist skill's jargon before it reaches the founder.
+- If a specialist skill is not installed (for example in a Claude Project where it was not uploaded), carry on with the stage skill alone.
+
 ## Talking to the founder
 
 The founder is not technical. Every stage follows these rules:

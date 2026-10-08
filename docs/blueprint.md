@@ -72,7 +72,7 @@ Every screen on the list is designed in one distinctive style the founder chose,
 5. Run a design critique, a UX copy review, and an accessibility check, then fix what they find.
 6. **Approval gate:** the founder approves the screens.
 
-Skills used: design critique, UX copy, accessibility review, and the theme and artifact design skills.
+Skills used: frontend-design, ui-ux-pro-max, refactoring-ui, web-typography, ios-hig-design, microinteractions, ux-heuristics, and apple-design-system when an Apple-style direction is chosen, plus the design critique, UX copy, and accessibility review skills where installed.
 
 ## Stage 4: Architect
 

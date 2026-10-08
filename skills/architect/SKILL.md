@@ -31,7 +31,7 @@ Cover each decision below and write a short decision record for each one, using 
 
 Each record gives 2 or 3 real options, the trade-offs in plain language, and a recommendation. Use the `engineering:architecture` skill if it is available.
 
-Also write a one-page overview in `docs/04-architecture.md`: a simple diagram of the parts and what talks to what, the list of decisions with links to their records, and the data model (main entities and how they relate, in plain words).
+Also write a one-page overview in `docs/04-architecture.md`: a diagram of the parts and what talks to what (draw it with the `drawio-skill` as `docs/04-architecture.drawio`, export a PNG for the founder if draw.io is installed, and fall back to a Mermaid diagram otherwise), the list of decisions with links to their records, and the data model (main entities and how they relate, in plain words).
 
 ### 3. Estimate the cost
 

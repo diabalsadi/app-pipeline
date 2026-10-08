@@ -7,6 +7,19 @@ description: Stage 1 of the app pipeline. Interviews a non-technical founder abo
 
 Turn the founder's idea into a business plan they approve. Follow the shared rules in the `pipeline-core` skill: environment, state file, approval gate, and how to talk to the founder.
 
+## Specialist skills
+
+| Step | Skill | Use it for |
+| --- | --- | --- |
+| Interview | `mom-test` | Asking about past behaviour, not opinions of the idea, and spotting compliments that carry no commitment |
+| Interview | `jobs-to-be-done` | Framing the problem as the job the customer is trying to get done |
+| Interview | `customer-research` | Turning the interview notes into needs, pains, and the founder's ideal customer |
+| Market research | `competitor-profiling` | Building each competitor's profile from its website and reviews |
+| How we win | `obviously-awesome`, `blue-ocean-strategy` | Positioning against the competitors, and finding what to drop, raise, or create |
+| Revenue model | `monetizing-innovation`, `pricing` | Checking willingness to pay, choosing the pricing model, and setting tiers |
+| Success metrics | `lean-analytics` | Picking the one metric that matters for this kind of business, with sensible targets |
+| Positioning summary | `product-marketing` | Writing the value proposition and messaging. Put the result in the business plan, not in a separate context file |
+
 ## Steps
 
 ### 1. Start the project
