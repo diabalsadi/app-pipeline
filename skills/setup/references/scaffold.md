@@ -39,7 +39,7 @@ src/theme/           tokens.ts generated from tokens.json, plus helpers
 src/services/        backend calls (Supabase client, payments, analytics)
 src/lib/             small pure helpers
 tests/ or __tests__/ unit and component tests, named after what they test
-docs/                business plan, requirements, design, architecture, QA
+docs/                business documents, authenticity, design, architecture, frontend, backend, QA
 pipeline/state.json  pipeline state
 ```
 

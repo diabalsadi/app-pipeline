@@ -1,5 +1,5 @@
 ---
-description: Stage 3: design personas, style directions, and every screen as clickable mockups
+description: Stage 3: screen list, personas, style directions, and every screen as clickable mockups
 argument-hint: "[optional notes for this stage]"
 ---
 

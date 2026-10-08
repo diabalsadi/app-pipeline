@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authenticity Card · {{PRODUCT}}</title>
+<style>
+  :root{--ink:#16172B;--paper:#F6F1E8;--card:#FFFDF8;--line:#E4DACA;--muted:#6C687A;--gold:#E8B33C;
+        --people:#D4553A;--place:#15806C;--purpose:#C98A12;--presence:#6A3D8F}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans","IBM Plex Sans Arabic","Noto Sans Arabic","Segoe UI",Tahoma,sans-serif;padding:24px 16px}
+  .wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+  header{background:var(--ink);color:#F6F1E8;border-radius:18px;padding:22px 26px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end}
+  header small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#A9A7BE}
+  header h1{font-family:Georgia,"Times New Roman",serif;font-size:34px;line-height:1.05;margin-top:4px}
+  header .tag{font-size:14px;color:#C9C6D6;margin-top:4px}
+  .status{border-radius:99px;padding:6px 14px;font-weight:700;font-size:13px}
+  .status.ok{background:#15806C;color:#fff}.status.wait{background:var(--gold);color:var(--ink)}.status.no{background:var(--people);color:#fff}
+  .meta{font-size:12px;color:#A9A7BE;text-align:right;margin-top:6px}
+  .feel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 24px;font-family:Georgia,serif;font-style:italic;font-size:21px;line-height:1.4}
+  .feel small{display:block;font-family:inherit;font-style:normal;font-size:11px;letter-spacing:.16em;color:var(--muted);margin-bottom:6px;font-family:sans-serif}
+  .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+  .box h2{font-size:11px;letter-spacing:.16em;color:var(--muted);margin-bottom:10px}
+  .lists{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .lists ul{list-style:none}
+  .lists li{padding:7px 0 7px 18px;position:relative;border-bottom:1px dashed var(--line);font-size:14px;line-height:1.35}
+  .lists li:before{content:"";position:absolute;left:0;top:12px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+  .sigel{margin-top:14px;background:#F9EDCF;border-radius:12px;padding:10px 14px;font-size:14px}
+  .sigel b{color:var(--purpose)}
+  .radar{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .radar svg{max-width:100%;height:auto;flex:none}
+  .avg{font-family:Georgia,serif;font-size:44px;font-weight:700;line-height:1}
+  .avg small{display:block;font-family:sans-serif;font-size:12px;color:var(--muted);font-weight:400;margin-top:4px}
+  .rules{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:10px}
+  .rules li{display:grid;grid-template-columns:22px 1fr;column-gap:8px;font-size:13px;font-weight:600}
+  .rules li span{grid-row:span 2;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px}
+  .rules li small{font-weight:400;color:var(--muted)}
+  .rules .ok span{background:var(--place)}.rules .no span{background:var(--people)}.rules .wait span{background:var(--gold);color:var(--ink)}
+  .lenses{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .lens{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:14px;padding:14px}
+  .lens h3{font-size:11px;letter-spacing:.18em;color:var(--c);margin-bottom:8px}
+  .dim{padding:7px 0;border-bottom:1px dashed var(--line)}.dim:last-child{border-bottom:none}
+  .dh{display:flex;align-items:center;gap:6px;font-size:13px}
+  .dh b{color:var(--c);font-size:11px}.dh span{font-weight:600;flex:1}
+  .dots{display:flex;gap:3px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}.dots i.on{background:var(--c)}
+  .dim p{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.35}
+  .sigs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .sig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;display:flex;flex-direction:column;gap:2px}
+  .sig small{font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}.sig b{font-size:16px}.sig span{font-size:12px;color:var(--muted)}
+  footer{text-align:center;font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;padding:6px}
+  @media (max-width:820px){.grid,.lists,.sigs{grid-template-columns:1fr}.lenses{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.lenses{grid-template-columns:1fr}header h1{font-size:28px}}
+  @media print{body{padding:0;background:#fff}.wrap{max-width:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div><small>Optimum Partners · Authenticity Card</small><h1>{{PRODUCT}}</h1><div class="tag">{{CLIENT}} · {{TAGLINE}}</div></div>
+    <div><span class="status {{STATUS_CLASS}}">{{STATUS}}</span><div class="meta">{{VERSION}} · {{DATE}}</div></div>
+  </header>
+  <div class="feel"><small>THIS PRODUCT FEELS LIKE</small>{{FEELS_LIKE}}</div>
+  <div class="grid">
+    <div class="box">
+      <div class="lists">
+        <div style="--c:var(--place)"><h2 style="color:var(--place)">ALWAYS</h2><ul>{{ALWAYS}}</ul></div>
+        <div style="--c:var(--people)"><h2 style="color:var(--people)">NEVER</h2><ul>{{NEVER}}</ul></div>
+      </div>
+      <div class="sigel"><b>Signature element ·</b> {{SIGNATURE}}</div>
+    </div>
+    <div class="box">
+      <h2>SCORE &amp; PASS RULES</h2>
+      <div class="radar">{{RADAR}}<div class="avg">{{AVERAGE}}<small>average / 3</small></div></div>
+      <ul class="rules">{{RULES}}</ul>
+    </div>
+  </div>
+  <div class="lenses">{{LENSES}}</div>
+  <div class="sigs">{{SIGNATURES}}</div>
+  <footer>No profile, no pixels · No profile, no code</footer>
+</div>
+</body>
+</html>

@@ -1,11 +1,11 @@
 # Test plan template
 
-Copy into `docs/07-qa/test-plan.md`.
+Copy into `docs/08-qa/test-plan.md`.
 
 ```markdown
 # [App name]: test plan
 
-Based on the requirements approved on [date]. Platforms under test: [iPhone (iOS [version]) simulator, Android [version] emulator, Chrome desktop].
+Based on the business documents approved on [date]. Platforms under test: [iPhone (iOS [version]) simulator, Android [version] emulator, Chrome desktop].
 
 ## Summary
 | Area | Cases | Automated | Manual |

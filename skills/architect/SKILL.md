@@ -7,13 +7,13 @@ description: Stage 4 of the app pipeline. Chooses the code and cloud architectur
 
 Choose how the app will be built and hosted, and what it will cost to run, in terms the founder can approve. Follow the shared rules in the `pipeline-core` skill.
 
-Requires `design` to be `approved`. Reads the business plan (constraints, budget, hard requirements), the requirements (platform, users, data rules), and `docs/03-design/tokens.json`.
+Requires `design` to be `approved`. Reads `docs/01-business/` (the Shared D1 for constraints, scope and success measures, and the registries for entities, rules, permissions, integrations and expected volumes), `docs/02-authenticity/AUTHENTICITY.md` (local services, payments, sign-in, hosting region and compliance), the screen list, and `docs/03-design/tokens.json`.
 
 ## Steps
 
 ### 1. Start from the defaults
 
-Use the default stack in [references/default-stack.md](references/default-stack.md). Mobile apps are cross-platform React Native unless the founder stated a hard requirement for another stack. Depart from a default only for a reason you can point to in the business plan or requirements, such as a hard requirement, a data rule, offline needs, or scale.
+Use the default stack in [references/default-stack.md](references/default-stack.md). Mobile apps are cross-platform React Native unless the founder stated a hard requirement for another stack. Depart from a default only for a reason you can point to in the business documents or the authenticity profile, such as a hard requirement, a data rule, offline needs, or scale.
 
 ### 2. Decide
 
@@ -27,7 +27,7 @@ Cover each decision below and write a short decision record for each one, using 
 6. Payments, if the app takes money
 7. Email and push notifications
 8. Error monitoring and product analytics, enough to measure the success metrics
-9. Third-party services the requirements need, such as maps, search, or AI
+9. Third-party services the business documents need, such as maps, search, or AI
 
 Each record gives 2 or 3 real options, the trade-offs in plain language, and a recommendation. Use the `engineering:architecture` skill if it is available. Use `software-architecture` for the code structure principles that the setup and build stages will follow (library-first, domain separate from infrastructure, small modules), translating its .NET examples to the chosen stack.
 
@@ -37,11 +37,13 @@ Also write a one-page overview in `docs/04-architecture.md`: a diagram of the pa
 
 Write `docs/04-cost-estimate.md` from [references/cost-estimate-template.md](references/cost-estimate-template.md):
 
-- Take the three usage levels from the requirements: users at launch, at 12 months, and a "scale" level of 10 times the 12-month figure.
+- Take the three usage levels from the Shared D1 success measures and the business profile: users at launch, at 12 months, and a "scale" level of 10 times the 12-month figure.
 - For every paid service, open its current pricing page and work out the monthly cost at each level. Link each price to its pricing page and record the date you checked it.
 - Never price from memory. If you cannot open a pricing page, mark the figure as "estimate, not checked" and say so to the founder.
 - Include one-off and yearly costs: the Apple Developer Program, the Google Play registration fee, and a domain name.
 - State the assumptions behind each figure, such as storage per user, emails per user per month, or requests per user per day.
+
+Trace each decision record to the business IDs or authenticity dimensions that drive it, and answer the guard question: are the local services and data rules from the profile respected?
 
 ### 4. Approval gate
 

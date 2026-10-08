@@ -4,7 +4,7 @@ The design stage uses two personas. Write both in `docs/03-design/personas.md`.
 
 ## User persona: who the app is for
 
-A short, specific profile of the main user, built from the business plan and the interview notes. Specific details produce better design decisions than averages do.
+A short, specific profile of the main user, built from the business documents, the authenticity brief and the interview notes. Specific details produce better design decisions than averages do.
 
 ```markdown
 ## User persona: [first name], [age]
@@ -16,7 +16,7 @@ A short, specific profile of the main user, built from the business plan and the
 - **What would make them trust the app:** [one or two things]
 ```
 
-Add a second user persona only if the requirements have a second role that uses many screens, such as an admin.
+Add a second user persona only if the business documents have a second role that uses many screens, such as an admin.
 
 ## Design persona: who is designing it
 

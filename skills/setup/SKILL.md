@@ -9,7 +9,7 @@ Give the app a repo and a skeleton that builds, so every later change is checked
 
 Requires `architect` to be `approved`. Reads `docs/04-architecture.md`, the decision records, and `docs/03-design/tokens.json`.
 
-**Stages 5 to 7 need Claude Code** (in the terminal, the desktop app, or on the web), because they run commands and push code. In a Claude Project, explain this to the founder and hand over: the `docs/` files they have collected become the starting point of a Claude Code session.
+**Stages 5 to 8 need Claude Code** (in the terminal, the desktop app, or on the web), because they run commands and push code. In a Claude Project, explain this to the founder and hand over: the `docs/` files they have collected become the starting point of a Claude Code session.
 
 ## Steps
 
@@ -25,12 +25,12 @@ Follow [references/scaffold.md](references/scaffold.md) for the stack the archit
 - Lay out folders as the reference shows: screens, components, theme, services, and tests.
 - Generate the theme module from `docs/03-design/tokens.json`. Every colour, size, and font in the app comes from it.
 - Add the test runner, the linter, and a `typecheck` script, so `npm run lint`, `npm run typecheck`, and `npm test` all work.
-- Copy the pipeline's `docs/` and `pipeline/` folders into the repo.
+- Copy the pipeline's `docs/` and `pipeline/` folders into the repo (the business documents, the authenticity profile and `AUTHENTICITY.md` included, so every later stage and every reviewer can read them).
 - Add `.env.example` with the name of every secret the architecture needs. Real values go only into `.env` (ignored by git) and the hosting provider's secret store.
 
 ### 3. Write the project rules
 
-Create `CLAUDE.md` from [references/claude-md-template.md](references/claude-md-template.md). It holds the coding standards that every build and QA change is reviewed against. Fill it in from the architecture, the `software-architecture` skill's principles, and the fixed engineering defaults in the architect stage's `default-stack.md`.
+Create `CLAUDE.md` from [references/claude-md-template.md](references/claude-md-template.md). It holds the coding standards that every build and QA change is reviewed against. Fill it in from the architecture, the authenticity profile's always and never rules, the `software-architecture` skill's principles, and the fixed engineering defaults in the architect stage's `default-stack.md`.
 
 ### 4. Create the repo and protect it
 
