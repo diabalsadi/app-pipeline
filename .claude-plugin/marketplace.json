@@ -13,6 +13,11 @@
       "description": "Takes a non-technical founder from an idea to a tested web or mobile app in 7 approved stages."
     },
     {
+      "name": "app-pipeline-full",
+      "source": "./bundles/app-pipeline-full",
+      "description": "Everything: the app pipeline plus all 26 extra plugins (security, QA, design, marketing, strategy and more). Recommended install."
+    },
+    {
       "name": "impeccable",
       "source": {
         "source": "git-subdir",

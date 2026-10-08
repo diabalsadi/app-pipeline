@@ -1,6 +1,6 @@
 # Third-party notices
 
-The optional plugins in `toolkit/extras.json` are not copied here; they install straight from their authors' repos at pinned commits.
+The extra plugins in `toolkit/extras.json` (installed by `app-pipeline-full`) are not copied here; they install straight from their authors' repos at pinned commits.
 
 These skills are copied unchanged from the repositories below, at the pinned commits, with each one's license file kept in its folder. Three have a small frontmatter edit: `apple-design-system` and `software-architecture` have narrower descriptions so they only run where the pipeline wants them, and `drawio-skill` drops `disable-model-invocation` so the architect stage can call it. Regenerate this file with `python3 scripts/update-toolkit.py`.
 

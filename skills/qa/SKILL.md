@@ -17,16 +17,16 @@ Requires `build` to be `approved`.
 | Test plan | `quality-assurance`, `test-strategy`, `risk-based-testing` | Quality gates, choosing what to test hardest, and the right mix of unit, integration, and end-to-end tests |
 | Test plan | `uat-testing`, `test-master` | Turning acceptance criteria into exhaustive test cases |
 | Test data | `test-data-management` | Seed users and data for repeatable runs |
-| Web end-to-end | `playwright-cli`, `playwright-automation`, `playwright-expert` | Driving the browser, and writing stable Playwright tests. `webapp-testing` (optional `example-skills` plugin) also works |
+| Web end-to-end | `playwright-cli`, `playwright-automation`, `playwright-expert` | Driving the browser, and writing stable Playwright tests. `webapp-testing` (extra `example-skills` plugin) also works |
 | Mobile end-to-end | `mobile-testing` | Maestro flows on simulators and emulators |
 | Specialised passes | `accessibility-testing`, `visual-testing`, `performance-testing`, `security-testing`, `payment-testing` | One pass each, where the app needs it |
 | Bugs | `bug-reproduction`, `ai-bug-triage` | Minimal reproduction steps, duplicate detection, and severity ranking (map the result onto `severity.md`) |
 | Fixing | `debugging-wizard` | Finding the root cause before fixing |
-| Compliance | `spec-to-code-compliance` (Trail of Bits optional plugin) | Checking the code against every requirement before the final run |
-| Polish | `impeccable` (optional plugin) | Its audit command as an extra pass on visual and UX quality |
+| Compliance | `spec-to-code-compliance` (Trail of Bits extra plugin) | Checking the code against every requirement before the final run |
+| Polish | `impeccable` (extra plugin) | Its audit command as an extra pass on visual and UX quality |
 | Fix review | `code-review`, `security-reviewer` | Reviewing every fix, as in the build stage |
 
-The whole `qa-skills` collection is also available as an optional plugin.
+The whole `qa-skills` collection is also installed by `app-pipeline-full` as an extra plugin.
 
 ## Steps
 

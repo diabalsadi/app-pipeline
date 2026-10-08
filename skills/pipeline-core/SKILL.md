@@ -54,7 +54,7 @@ Every stage ends at a gate, and nothing moves on without the founder's explicit 
 
 ## Specialist skills
 
-Each stage names specialist skills bundled with this plugin (listed in `THIRD_PARTY_NOTICES.md`). Load one when its step comes up. They supply method and depth, while the stage skill stays in charge:
+Each stage names specialist skills: most are bundled with this plugin (listed in `THIRD_PARTY_NOTICES.md`), and some come from the extra plugins that `app-pipeline-full` installs. Load one when its step comes up. They supply method and depth, while the stage skill stays in charge:
 
 - The stage's templates, file locations, and approval gate always win. A specialist skill's output is folded into the stage's own files, not saved somewhere else.
 - The founder rules below still apply, so translate a specialist skill's jargon before it reaches the founder.

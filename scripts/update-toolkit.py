@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "toolkit" / "sources.json"
 EXTRAS = ROOT / "toolkit" / "extras.json"
 MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
+FULL = ROOT / "bundles" / "app-pipeline-full" / ".claude-plugin" / "plugin.json"
 SKILLS = ROOT / "skills"
 NOTICES = ROOT / "THIRD_PARTY_NOTICES.md"
 
@@ -54,9 +55,9 @@ def set_frontmatter(skill_md: Path, description: str | None, allow_model: bool) 
 
 
 def write_marketplace() -> None:
-    """Keep the core plugin entry and list every optional extra after it."""
+    """Keep the core and full-bundle entries and list every extra after them."""
     market = json.loads(MARKETPLACE.read_text())
-    core = [p for p in market["plugins"] if p["name"] == "app-pipeline"]
+    core = [p for p in market["plugins"] if p["name"] in ("app-pipeline", "app-pipeline-full")]
     extras = []
     for e in json.loads(EXTRAS.read_text())["plugins"]:
         if "path" in e:
@@ -72,6 +73,10 @@ def write_marketplace() -> None:
         extras.append(entry)
     market["plugins"] = core + extras
     MARKETPLACE.write_text(json.dumps(market, indent=2) + "\n")
+    # The full bundle has no skills of its own: installing it installs the core plugin and every extra.
+    full = json.loads(FULL.read_text())
+    full["dependencies"] = ["app-pipeline"] + [e["name"] for e in extras]
+    FULL.write_text(json.dumps(full, indent=2) + "\n")
 
 
 def main() -> None:
@@ -113,7 +118,7 @@ def main() -> None:
     )
     NOTICES.write_text(
         "# Third-party notices\n\n"
-        "The optional plugins in `toolkit/extras.json` are not copied here; they install straight "
+        "The extra plugins in `toolkit/extras.json` (installed by `app-pipeline-full`) are not copied here; they install straight "
         "from their authors' repos at pinned commits.\n\n"
         "These skills are copied unchanged from the repositories below, at the pinned commits, "
         "with each one's license file kept in its folder. Three have a small frontmatter edit: "

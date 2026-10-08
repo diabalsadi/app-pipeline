@@ -1,5 +1,5 @@
 {
-  "_comment": "Optional plugins listed in this repo's marketplace. They install straight from each author's repo at the pinned commit and are not copied here. scripts/update-toolkit.py writes them into .claude-plugin/marketplace.json.",
+  "_comment": "Extra plugins listed in this repo's marketplace and declared as dependencies of the core plugin, so installing app-pipeline installs them too. They install straight from each author's repo at the pinned commit and are not copied here. scripts/update-toolkit.py writes them into .claude-plugin/marketplace.json and plugin.json.",
   "plugins": [
     {
       "name": "impeccable",

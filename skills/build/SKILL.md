@@ -17,13 +17,13 @@ Requires `setup` to be `approved`. Works from the `screens` list in `pipeline/st
 | Build | `react-native-expert` or `nextjs-developer`, with `react-expert` and `typescript-pro` | Implementation patterns for the chosen stack |
 | Build | `postgres-pro` | Tables, migrations, indexes, and row level security policies |
 | Build | `ui-ux-pro-max`, `microinteractions` | Stack-specific UI guidelines, and feedback on taps, saves, and errors |
-| Build | `threejs-skills` (optional plugin) | Only for a web screen that needs a 3D scene |
-| Polish | `impeccable` (optional plugin) | Its polish and audit commands before the founder sees the screen |
+| Build | `threejs-skills` (extra plugin) | Only for a web screen that needs a 3D scene |
+| Polish | `impeccable` (extra plugin) | Its polish and audit commands before the founder sees the screen |
 | Code review | `code-review` | The main review: Standards against `CLAUDE.md`, and Spec against the screen's stories and acceptance criteria. The spec source is `docs/02-requirements.md` |
 | Code review | `code-review-skill`, `code-reviewer` | Language guides (TypeScript, React) and the common-bugs checklist |
 | Security review | `security-reviewer`, `secure-code-guardian` | The security review in step 5, with the checklist |
-| Security review | `differential-review`, `insecure-defaults`, `sharp-edges`, `static-analysis`, `supply-chain-risk-auditor` (Trail of Bits optional plugins) | A deeper security pass when installed. Run `supply-chain-risk-auditor` whenever the change adds a dependency |
-| Security review | `fp-check` (optional plugin) | Confirming a security finding is real before acting on it |
+| Security review | `differential-review`, `insecure-defaults`, `sharp-edges`, `static-analysis`, `supply-chain-risk-auditor` (Trail of Bits extra plugins) | A deeper security pass when installed. Run `supply-chain-risk-auditor` whenever the change adds a dependency |
+| Security review | `fp-check` (extra plugin) | Confirming a security finding is real before acting on it |
 | Structure | `software-architecture` | Keeping logic in services and screens thin |
 
 ## The loop
