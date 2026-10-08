@@ -51,23 +51,31 @@ docs/             the blueprint
 
 ## Bundled specialist skills
 
-The stages call on 20 third-party skills that ship inside this plugin, pinned to a reviewed commit. `THIRD_PARTY_NOTICES.md` lists each one with its source and license.
+The stages call on 24 third-party skills that ship inside this plugin, each pinned to a reviewed commit. `THIRD_PARTY_NOTICES.md` lists each one with its source and license.
 
 | Stage | Skills |
 | --- | --- |
-| Discover | `mom-test`, `jobs-to-be-done`, `customer-research`, `competitor-profiling`, `obviously-awesome`, `blue-ocean-strategy`, `monetizing-innovation`, `pricing`, `lean-analytics`, `product-marketing` |
-| Design | `frontend-design`, `ui-ux-pro-max`, `apple-design-system`, `refactoring-ui`, `web-typography`, `ios-hig-design`, `microinteractions`, `ux-heuristics` |
-| Architect | `drawio-skill` |
+| Discover | `mom-test`, `jobs-to-be-done`, `customer-research`, `competitor-profiling`, `obviously-awesome`, `blue-ocean-strategy`, `monetizing-innovation`, `pricing`, `lean-analytics`, `product-marketing`, `business-plan`, `market-researcher` |
+| Design | `frontend-design`, `ui-ux-pro-max`, `apple-design-system`, `brand-guidelines`, `refactoring-ui`, `web-typography`, `ios-hig-design`, `microinteractions`, `ux-heuristics` |
+| Architect | `drawio-skill`, `software-architecture` |
 | QA (stage 7, not built yet) | `uat-testing` |
 
 To update one, change its commit in `toolkit/sources.json`, run `python3 scripts/update-toolkit.py`, and review the diff.
 
-### Optional extras, installed separately
+## Optional plugins
 
-These are not bundled. Install them yourself if a project needs them:
+This repo's marketplace also lists 16 whole plugins. They install straight from each author's repo at a pinned commit (`toolkit/extras.json`) and are not copied here. Install the ones you want after adding the marketplace, for example `/plugin install impeccable@app-pipeline`.
 
-- **impeccable** (design polish and audits): `/plugin marketplace add pbakaus/impeccable` then `/plugin install impeccable@impeccable`. Its hooks run on every file edit and download a native binary from the project's GitHub releases, so it is opt-in.
-- **threejs-skills** (3D scenes for web apps): see [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills). It has no license, so it cannot be bundled.
+| Plugin | What it adds | Source |
+| --- | --- | --- |
+| `impeccable` | Design polish, audits, and critique commands. Its hooks run after every file edit and download a native binary from the project's releases | pbakaus/impeccable |
+| `threejs-skills` | 10 Three.js skills for 3D on the web. No license is published | CloudAI-X/threejs-skills |
+| `marketing-skills` | 40+ marketing skills: SEO, copy, launch, ads, onboarding, pricing | coreyhaines31/marketingskills |
+| `ccc-skills` | 15 skills: Excalidraw, landing pages, UAT testing, pitch decks, analytics setup | ooiyeefei/ccc |
+| `example-skills`, `document-skills` | Anthropic's skills: frontend design, web app testing, theme factory, Word, Excel, PowerPoint, PDF | anthropics/skills |
+| `product-strategy`, `ux-design`, `marketing-cro`, `sales-influence`, `product-innovation`, `strategy-growth`, `team-motivation`, `code-craftsmanship`, `systems-architecture`, `metaskills` | 10 book-based collections, about 70 skills in all | wondelai/skills |
+
+Each plugin adds its skills to every session, so install only the ones a project needs. In a Claude Project, only the bundled skills are packaged by `package-skills.sh`.
 
 ## Key defaults
 

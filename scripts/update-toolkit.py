@@ -17,6 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "toolkit" / "sources.json"
+EXTRAS = ROOT / "toolkit" / "extras.json"
+MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
 SKILLS = ROOT / "skills"
 NOTICES = ROOT / "THIRD_PARTY_NOTICES.md"
 
@@ -51,6 +53,25 @@ def set_frontmatter(skill_md: Path, description: str | None, allow_model: bool) 
     skill_md.write_text("---\n" + "\n".join(out) + "\n---\n" + text[match.end():])
 
 
+def write_marketplace() -> None:
+    """Keep the core plugin entry and list every optional extra after it."""
+    market = json.loads(MARKETPLACE.read_text())
+    core = [p for p in market["plugins"] if p["name"] == "app-pipeline"]
+    extras = []
+    for e in json.loads(EXTRAS.read_text())["plugins"]:
+        if "path" in e:
+            source = {"source": "git-subdir", "url": f"https://github.com/{e['repo']}.git", "path": e["path"], "sha": e["commit"]}
+        else:
+            source = {"source": "github", "repo": e["repo"], "sha": e["commit"]}
+        entry = {"name": e["name"], "source": source, "description": e["description"]}
+        for key in ("strict", "skills"):
+            if key in e:
+                entry[key] = e[key]
+        extras.append(entry)
+    market["plugins"] = core + extras
+    MARKETPLACE.write_text(json.dumps(market, indent=2) + "\n")
+
+
 def main() -> None:
     manifest = json.loads(MANIFEST.read_text())
     checkouts: dict[tuple[str, str], Path] = {}
@@ -83,16 +104,19 @@ def main() -> None:
             )
             print(f"skills/{entry['name']}  <- {entry['repo']}@{entry['commit'][:7]}")
 
+    write_marketplace()
     rows = "\n".join(
         f"| `{e['name']}` | {e['stage']} | [{e['repo']}](https://github.com/{e['repo']}/tree/{e['commit']}/{e['path'].strip('./')}) | `{e['commit'][:7]}` | {e['license']} |"
         for e in manifest["skills"]
     )
     NOTICES.write_text(
         "# Third-party notices\n\n"
+        "The optional plugins in `toolkit/extras.json` are not copied here; they install straight "
+        "from their authors' repos at pinned commits.\n\n"
         "These skills are copied unchanged from the repositories below, at the pinned commits, "
-        "with each one's license file kept in its folder. Two have a small frontmatter edit: "
-        "`apple-design-system` has a narrower description so it only runs when an Apple-style "
-        "direction is chosen, and `drawio-skill` drops `disable-model-invocation` so the "
+        "with each one's license file kept in its folder. Three have a small frontmatter edit: "
+        "`apple-design-system` and `software-architecture` have narrower descriptions so they only "
+        "run where the pipeline wants them, and `drawio-skill` drops `disable-model-invocation` so the "
         "architect stage can call it. Regenerate this file with `python3 scripts/update-toolkit.py`.\n\n"
         "| Skill | Stage | Source | Commit | License |\n| --- | --- | --- | --- | --- |\n"
         + rows + "\n"

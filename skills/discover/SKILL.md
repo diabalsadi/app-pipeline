@@ -18,6 +18,7 @@ Turn the founder's idea into a business plan they approve. Follow the shared rul
 | How we win | `obviously-awesome`, `blue-ocean-strategy` | Positioning against the competitors, and finding what to drop, raise, or create |
 | Revenue model | `monetizing-innovation`, `pricing` | Checking willingness to pay, choosing the pricing model, and setting tiers |
 | Success metrics | `lean-analytics` | Picking the one metric that matters for this kind of business, with sensible targets |
+| Business plan | `business-plan`, `market-researcher` | General prompts for plan sections and research synthesis. The template in this skill still sets the structure |
 | Positioning summary | `product-marketing` | Writing the value proposition and messaging. Put the result in the business plan, not in a separate context file |
 
 ## Steps

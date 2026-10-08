@@ -11,6 +11,300 @@
       "name": "app-pipeline",
       "source": "./",
       "description": "Takes a non-technical founder from an idea to a tested web or mobile app in 7 approved stages."
+    },
+    {
+      "name": "impeccable",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pbakaus/impeccable.git",
+        "path": "plugin",
+        "sha": "778c8a7b71ccd5bfe3ca6ac68c15d9d872d0f87d"
+      },
+      "description": "Design polish and audits: one skill with 24 commands (polish, audit, critique and more) and anti-pattern detection. Its hooks run after every file edit and download a native engine binary from the project's GitHub releases."
+    },
+    {
+      "name": "threejs-skills",
+      "source": {
+        "source": "github",
+        "repo": "CloudAI-X/threejs-skills",
+        "sha": "b1c623076c661fc9b03dac19292e825a5d106823"
+      },
+      "description": "Three.js skills for 3D scenes on the web: fundamentals, geometry, materials, lighting, shaders, animation, loaders and more. No license is published, so this is installed straight from the author's repo.",
+      "strict": false,
+      "skills": [
+        "./skills/threejs-animation",
+        "./skills/threejs-fundamentals",
+        "./skills/threejs-geometry",
+        "./skills/threejs-interaction",
+        "./skills/threejs-lighting",
+        "./skills/threejs-loaders",
+        "./skills/threejs-materials",
+        "./skills/threejs-postprocessing",
+        "./skills/threejs-shaders",
+        "./skills/threejs-textures"
+      ]
+    },
+    {
+      "name": "product-strategy",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Product strategy and innovation frameworks including Jobs to Be Done (Clayton Christensen) for customer discovery and product design, tactical negotiation skills (Chris Voss), willingness-to-pay pricing (Monetizing Innovation), and startup metrics (Lean Analytics)",
+      "strict": false,
+      "skills": [
+        "./jobs-to-be-done",
+        "./negotiation",
+        "./mom-test",
+        "./monetizing-innovation",
+        "./lean-analytics"
+      ]
+    },
+    {
+      "name": "ux-design",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "UX and UI design skills including Refactoring UI, iOS HIG design, usability heuristics, habit-forming product design, behavior design for retention, web typography, award-winning top-design, Steve Jobs-style design reviews, and Don Norman's foundational design principles",
+      "strict": false,
+      "skills": [
+        "./refactoring-ui",
+        "./ios-hig-design",
+        "./ux-heuristics",
+        "./hooked-ux",
+        "./improve-retention",
+        "./web-typography",
+        "./top-design",
+        "./design-everyday-things",
+        "./lean-ux",
+        "./microinteractions",
+        "./steve-jobs-design-review"
+      ]
+    },
+    {
+      "name": "marketing-cro",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Marketing and conversion optimization skills including CRO methodology, StoryBrand messaging, Scorecard Marketing lead generation, viral marketing (Contagious), and 1-Page Marketing Plan",
+      "strict": false,
+      "skills": [
+        "./cro-methodology",
+        "./storybrand-messaging",
+        "./scorecard-marketing",
+        "./contagious",
+        "./one-page-marketing"
+      ]
+    },
+    {
+      "name": "sales-influence",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Sales, persuasion, and messaging skills including Cialdini's influence psychology, Aaron Ross's outbound sales methodology, Heath Brothers' sticky messaging, and Alex Hormozi's offer creation",
+      "strict": false,
+      "skills": [
+        "./influence-psychology",
+        "./predictable-revenue",
+        "./made-to-stick",
+        "./hundred-million-offers"
+      ]
+    },
+    {
+      "name": "product-innovation",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Product innovation and validation frameworks including Lean Startup methodology, Google Ventures Design Sprint, and Don Norman's design principles",
+      "strict": false,
+      "skills": [
+        "./lean-startup",
+        "./design-sprint",
+        "./design-everyday-things",
+        "./inspired-product",
+        "./continuous-discovery",
+        "./37signals-way"
+      ]
+    },
+    {
+      "name": "strategy-growth",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Business strategy and growth frameworks including Crossing the Chasm tech adoption, Blue Ocean Strategy value innovation, EOS business operating system, Obviously Awesome positioning, Good Strategy Bad Strategy kernels, and Cold Start Problem network effects",
+      "strict": false,
+      "skills": [
+        "./crossing-the-chasm",
+        "./blue-ocean-strategy",
+        "./traction-eos",
+        "./obviously-awesome",
+        "./good-strategy-bad-strategy",
+        "./cold-start-problem"
+      ]
+    },
+    {
+      "name": "team-motivation",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Team motivation and management skills including Daniel Pink's Autonomy, Mastery, Purpose (AMP) principles and Andy Grove's High Output Management (leverage, one-on-ones, OKRs, task-relevant maturity)",
+      "strict": false,
+      "skills": [
+        "./drive-motivation",
+        "./high-output-management"
+      ]
+    },
+    {
+      "name": "code-craftsmanship",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Code quality and software design skills including Clean Code (Robert C. Martin), Refactoring patterns (Martin Fowler), A Philosophy of Software Design (John Ousterhout), The Pragmatic Programmer (Hunt & Thomas), Domain-Driven Design (Eric Evans), Working Effectively with Legacy Code (Michael Feathers), and Google's Developer Documentation Style Guide (technical-documentation)",
+      "strict": false,
+      "skills": [
+        "./clean-code",
+        "./refactoring-patterns",
+        "./software-design-philosophy",
+        "./pragmatic-programmer",
+        "./domain-driven-design",
+        "./working-with-legacy-code",
+        "./technical-documentation"
+      ]
+    },
+    {
+      "name": "systems-architecture",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Systems architecture and distributed systems skills including Designing Data-Intensive Applications (Martin Kleppmann), System Design Interview (Alex Xu), Clean Architecture (Robert C. Martin), Release It! (Michael Nygard), High Performance Browser Networking (Ilya Grigorik), and Team Topologies (Skelton & Pais)",
+      "strict": false,
+      "skills": [
+        "./ddia-systems",
+        "./system-design",
+        "./clean-architecture",
+        "./release-it",
+        "./high-perf-browser",
+        "./team-topologies"
+      ]
+    },
+    {
+      "name": "metaskills",
+      "source": {
+        "source": "github",
+        "repo": "wondelai/skills",
+        "sha": "c172996495bed0fcd26896a9416b2093fd7073f0"
+      },
+      "description": "Fourteen guided journeys that orchestrate the whole skill library step by step \u2014 create, improve, and grow a business, website, or app, plus improve code quality, remove technical debt, design code architecture, optimize a conversion flow, and optimize an existing codebase for speed and structure. Each metaskill invokes the right skills phase by phase, asks the user questions at every decision point, and records results as living documents in the project docs/ folder",
+      "strict": false,
+      "skills": [
+        "./create-business",
+        "./create-website",
+        "./create-app",
+        "./improve-business",
+        "./improve-website",
+        "./improve-app",
+        "./grow-business",
+        "./grow-website",
+        "./grow-app",
+        "./improve-code-quality",
+        "./remove-technical-debt",
+        "./design-code-architecture",
+        "./conversion-optimization",
+        "./architecture-optimization"
+      ]
+    },
+    {
+      "name": "document-skills",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills",
+        "sha": "683bc88e56f3e09ba94f7055977f3d3aa499f202"
+      },
+      "description": "Collection of document processing suite including Excel, Word, PowerPoint, and PDF capabilities",
+      "strict": false,
+      "skills": [
+        "./skills/xlsx",
+        "./skills/docx",
+        "./skills/pptx",
+        "./skills/pdf"
+      ]
+    },
+    {
+      "name": "example-skills",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills",
+        "sha": "683bc88e56f3e09ba94f7055977f3d3aa499f202"
+      },
+      "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
+      "strict": false,
+      "skills": [
+        "./skills/algorithmic-art",
+        "./skills/brand-guidelines",
+        "./skills/canvas-design",
+        "./skills/doc-coauthoring",
+        "./skills/frontend-design",
+        "./skills/internal-comms",
+        "./skills/mcp-builder",
+        "./skills/skill-creator",
+        "./skills/slack-gif-creator",
+        "./skills/theme-factory",
+        "./skills/web-artifacts-builder",
+        "./skills/webapp-testing"
+      ]
+    },
+    {
+      "name": "marketing-skills",
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills",
+        "sha": "b9ba399dd88b082b926e261e8ccfb843d20aa066"
+      },
+      "description": "50 marketing skills for technical marketers and founders: CRO, copywriting, cold email, prospecting, SEO, AI SEO, paid ads, SMS, ad creative, video production, image generation, co-marketing, churn prevention, pricing, referrals, revenue operations, sales enablement, customer research, site architecture, comprehensive AARRR-structured marketing plans, public relations and earned media, offer design, event marketing and webinars, and more"
+    },
+    {
+      "name": "ccc-skills",
+      "source": {
+        "source": "github",
+        "repo": "ooiyeefei/ccc",
+        "sha": "c0fd92631a09e53eedcb9553f36c074cb0114ddd"
+      },
+      "description": "Collection of skills and commands: Excalidraw diagrams, Streak challenge tracker, agentic system design, self-improving systems, htmldrop HTML sharing, landing page GTM, UAT testing, cross-app shared auth, Google Analytics (GA4) setup, Meta Pixel setup, project showcase catalog, and the pitch suite (pitch-craft timed scripts, demo-video recording, pitch-deck, pitch-package orchestration)",
+      "strict": false,
+      "skills": [
+        "./skills/excalidraw",
+        "./skills/streak",
+        "./skills/agentic-system-design",
+        "./skills/self-improving-systems",
+        "./skills/htmldrop",
+        "./skills/landing-page-gtm",
+        "./skills/uat-testing",
+        "./skills/cross-app-shared-auth",
+        "./skills/google-analytics-setup",
+        "./skills/meta-pixel-setup",
+        "./skills/pitch-craft",
+        "./skills/demo-video",
+        "./skills/motion-video",
+        "./skills/pitch-deck",
+        "./skills/pitch-package"
+      ]
     }
   ]
 }

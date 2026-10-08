@@ -1,6 +1,8 @@
 # Third-party notices
 
-These skills are copied unchanged from the repositories below, at the pinned commits, with each one's license file kept in its folder. Two have a small frontmatter edit: `apple-design-system` has a narrower description so it only runs when an Apple-style direction is chosen, and `drawio-skill` drops `disable-model-invocation` so the architect stage can call it. Regenerate this file with `python3 scripts/update-toolkit.py`.
+The optional plugins in `toolkit/extras.json` are not copied here; they install straight from their authors' repos at pinned commits.
+
+These skills are copied unchanged from the repositories below, at the pinned commits, with each one's license file kept in its folder. Three have a small frontmatter edit: `apple-design-system` and `software-architecture` have narrower descriptions so they only run where the pipeline wants them, and `drawio-skill` drops `disable-model-invocation` so the architect stage can call it. Regenerate this file with `python3 scripts/update-toolkit.py`.
 
 | Skill | Stage | Source | Commit | License |
 | --- | --- | --- | --- | --- |
@@ -24,3 +26,7 @@ These skills are copied unchanged from the repositories below, at the pinned com
 | `lean-analytics` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/lean-analytics) | `c172996` | MIT |
 | `blue-ocean-strategy` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/blue-ocean-strategy) | `c172996` | MIT |
 | `obviously-awesome` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/obviously-awesome) | `c172996` | MIT |
+| `business-plan` | discover | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/business-plan) | `02077f8` | MIT |
+| `market-researcher` | discover | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/market-researcher) | `02077f8` | MIT |
+| `brand-guidelines` | design | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/brand-guidelines) | `02077f8` | MIT |
+| `software-architecture` | architect | [thangchung/agent-engineering-experiment](https://github.com/thangchung/agent-engineering-experiment/tree/2f0b7a161566755e325c5e3ceb094327aed7217c/foundry-local-agent-fx/.github/skills/software-architecture) | `2f0b7a1` | MIT |

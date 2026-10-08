@@ -29,7 +29,7 @@ Cover each decision below and write a short decision record for each one, using 
 8. Error monitoring and product analytics, enough to measure the success metrics
 9. Third-party services the requirements need, such as maps, search, or AI
 
-Each record gives 2 or 3 real options, the trade-offs in plain language, and a recommendation. Use the `engineering:architecture` skill if it is available.
+Each record gives 2 or 3 real options, the trade-offs in plain language, and a recommendation. Use the `engineering:architecture` skill if it is available. Use `software-architecture` for the code structure principles that the setup and build stages will follow (library-first, domain separate from infrastructure, small modules), translating its .NET examples to the chosen stack.
 
 Also write a one-page overview in `docs/04-architecture.md`: a diagram of the parts and what talks to what (draw it with the `drawio-skill` as `docs/04-architecture.drawio`, export a PNG for the founder if draw.io is installed, and fall back to a Mermaid diagram otherwise), the list of decisions with links to their records, and the data model (main entities and how they relate, in plain words).
 
