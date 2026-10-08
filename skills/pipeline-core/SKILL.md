@@ -30,6 +30,8 @@ Detect which environment you are in and use the matching storage:
 - **Claude Code (or any session with a working folder):** one folder per app project. Outputs go in `docs/` inside it, and the state file is `pipeline/state.json`. Create the folders if they are missing.
 - **Claude Project on claude.ai (no shared folder):** each output is a document or file you hand the founder. Ask them to add it to the Project's files so later stages can read it. Keep the state as a short "Pipeline status" document in the same format as `state.json`, and give the founder the updated version after every approval.
 
+From stage 5 on, the working folder is the app's own repo: setup copies `docs/` and `pipeline/` into it, and every later change to them goes through a pull request. Stages 5 to 7 need Claude Code, because they run commands and push code.
+
 When an earlier output is needed and you cannot find it, ask the founder for it rather than guessing its contents.
 
 ## Project state

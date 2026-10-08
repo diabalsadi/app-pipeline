@@ -7,6 +7,7 @@ The state file is `pipeline/state.json` in Claude Code, or the "Pipeline status"
   "project": "Plant Swap",
   "createdAt": "2026-10-08",
   "platform": null,
+  "repo": null,
   "stages": {
     "discover":  { "status": "approved", "approvedAt": "2026-10-08", "outputs": ["docs/01-business-plan.md"] },
     "validate":  { "status": "awaiting_approval", "approvedAt": null, "outputs": ["docs/02-requirements.md"] },
@@ -30,7 +31,8 @@ The state file is `pipeline/state.json` in Claude Code, or the "Pipeline status"
 - `stages.<name>.status`: one of the statuses below.
 - `stages.<name>.approvedAt`: the date of the founder's approval, or `null`.
 - `stages.<name>.outputs`: the files the stage produced.
-- `screens`: filled by validate from the screen list as `{ "id": "S01", "name": "Sign up", "status": "not_started" }`. The build stage updates each screen's status.
+- `repo`: the app's GitHub repo URL, set by setup. It stays `null` until then.
+- `screens`: filled by validate from the screen list as `{ "id": "S01", "name": "Sign up", "status": "not_started" }`. The build stage moves each screen through `not_started`, `in_progress`, `awaiting_founder`, `changes_requested`, `in_review`, and `done`, and adds `"pr"` (the merged pull request URL) when done.
 - `history`: one entry per start, approval, change request, or reapproval, newest last.
 
 ## Statuses
