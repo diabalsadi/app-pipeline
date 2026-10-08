@@ -16,32 +16,20 @@ These skills are copied unchanged from the repositories below, at the pinned com
 | `microinteractions` | design | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/microinteractions) | `c172996` | MIT |
 | `drawio-skill` | architect | [Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill/tree/88fd9236bc532aac4c25cb008a8bd59bc650b904/skills/drawio-skill) | `88fd923` | MIT |
 | `uat-testing` | qa | [ooiyeefei/ccc](https://github.com/ooiyeefei/ccc/tree/c0fd92631a09e53eedcb9553f36c074cb0114ddd/skills/uat-testing) | `c0fd926` | MIT |
-| `customer-research` | discover | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/b9ba399dd88b082b926e261e8ccfb843d20aa066/skills/customer-research) | `b9ba399` | MIT |
-| `competitor-profiling` | discover | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/b9ba399dd88b082b926e261e8ccfb843d20aa066/skills/competitor-profiling) | `b9ba399` | MIT |
-| `pricing` | discover | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/b9ba399dd88b082b926e261e8ccfb843d20aa066/skills/pricing) | `b9ba399` | MIT |
-| `product-marketing` | discover | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills/tree/b9ba399dd88b082b926e261e8ccfb843d20aa066/skills/product-marketing) | `b9ba399` | MIT |
-| `mom-test` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/mom-test) | `c172996` | MIT |
-| `jobs-to-be-done` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/jobs-to-be-done) | `c172996` | MIT |
-| `monetizing-innovation` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/monetizing-innovation) | `c172996` | MIT |
-| `lean-analytics` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/lean-analytics) | `c172996` | MIT |
-| `blue-ocean-strategy` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/blue-ocean-strategy) | `c172996` | MIT |
-| `obviously-awesome` | discover | [wondelai/skills](https://github.com/wondelai/skills/tree/c172996495bed0fcd26896a9416b2093fd7073f0/obviously-awesome) | `c172996` | MIT |
-| `business-plan` | discover | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/business-plan) | `02077f8` | MIT |
-| `market-researcher` | discover | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/market-researcher) | `02077f8` | MIT |
 | `brand-guidelines` | design | [inbharatai/claude-skills](https://github.com/inbharatai/claude-skills/tree/02077f8b2c05946a71fa087dee6d614c0b4e4e0d/skills/brand-guidelines) | `02077f8` | MIT |
 | `software-architecture` | architect | [thangchung/agent-engineering-experiment](https://github.com/thangchung/agent-engineering-experiment/tree/2f0b7a161566755e325c5e3ceb094327aed7217c/foundry-local-agent-fx/.github/skills/software-architecture) | `2f0b7a1` | MIT |
-| `code-review` | build | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/code-review) | `b0618bc` | MIT |
-| `grill-me` | validate | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grill-me) | `b0618bc` | MIT |
-| `grilling` | validate | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grilling) | `b0618bc` | MIT |
-| `code-review-skill` | build | [awesome-skills/code-review-skill](https://github.com/awesome-skills/code-review-skill/tree/4850184dfd7765ea7b3c5c4e9b6cf8e0815ee7cb/) | `4850184` | MIT |
-| `react-native-expert` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/react-native-expert) | `1be15d8` | MIT |
-| `react-expert` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/react-expert) | `1be15d8` | MIT |
-| `nextjs-developer` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/nextjs-developer) | `1be15d8` | MIT |
-| `typescript-pro` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/typescript-pro) | `1be15d8` | MIT |
-| `postgres-pro` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/postgres-pro) | `1be15d8` | MIT |
-| `code-reviewer` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/code-reviewer) | `1be15d8` | MIT |
-| `security-reviewer` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/security-reviewer) | `1be15d8` | MIT |
-| `secure-code-guardian` | build | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/secure-code-guardian) | `1be15d8` | MIT |
+| `code-review` | frontend, backend | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/code-review) | `b0618bc` | MIT |
+| `grill-me` | business | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grill-me) | `b0618bc` | MIT |
+| `grilling` | business | [mattpocock/skills](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/productivity/grilling) | `b0618bc` | MIT |
+| `code-review-skill` | frontend, backend | [awesome-skills/code-review-skill](https://github.com/awesome-skills/code-review-skill/tree/4850184dfd7765ea7b3c5c4e9b6cf8e0815ee7cb/) | `4850184` | MIT |
+| `react-native-expert` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/react-native-expert) | `1be15d8` | MIT |
+| `react-expert` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/react-expert) | `1be15d8` | MIT |
+| `nextjs-developer` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/nextjs-developer) | `1be15d8` | MIT |
+| `typescript-pro` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/typescript-pro) | `1be15d8` | MIT |
+| `postgres-pro` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/postgres-pro) | `1be15d8` | MIT |
+| `code-reviewer` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/code-reviewer) | `1be15d8` | MIT |
+| `security-reviewer` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/security-reviewer) | `1be15d8` | MIT |
+| `secure-code-guardian` | frontend, backend | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/secure-code-guardian) | `1be15d8` | MIT |
 | `debugging-wizard` | qa | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/debugging-wizard) | `1be15d8` | MIT |
 | `test-master` | qa | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/test-master) | `1be15d8` | MIT |
 | `playwright-expert` | qa | [jeffallan/claude-skills](https://github.com/jeffallan/claude-skills/tree/1be15d8064f88fc25216442406d40add8fd23b53/skills/playwright-expert) | `1be15d8` | MIT |

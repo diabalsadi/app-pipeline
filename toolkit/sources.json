@@ -98,114 +98,6 @@
       "licenseFile": "LICENSE"
     },
     {
-      "name": "customer-research",
-      "stage": "discover",
-      "repo": "coreyhaines31/marketingskills",
-      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
-      "path": "skills/customer-research",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "competitor-profiling",
-      "stage": "discover",
-      "repo": "coreyhaines31/marketingskills",
-      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
-      "path": "skills/competitor-profiling",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "pricing",
-      "stage": "discover",
-      "repo": "coreyhaines31/marketingskills",
-      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
-      "path": "skills/pricing",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "product-marketing",
-      "stage": "discover",
-      "repo": "coreyhaines31/marketingskills",
-      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
-      "path": "skills/product-marketing",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "mom-test",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "mom-test",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "jobs-to-be-done",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "jobs-to-be-done",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "monetizing-innovation",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "monetizing-innovation",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "lean-analytics",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "lean-analytics",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "blue-ocean-strategy",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "blue-ocean-strategy",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "obviously-awesome",
-      "stage": "discover",
-      "repo": "wondelai/skills",
-      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
-      "path": "obviously-awesome",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "business-plan",
-      "stage": "discover",
-      "repo": "inbharatai/claude-skills",
-      "commit": "02077f8b2c05946a71fa087dee6d614c0b4e4e0d",
-      "path": "skills/business-plan",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
-      "name": "market-researcher",
-      "stage": "discover",
-      "repo": "inbharatai/claude-skills",
-      "commit": "02077f8b2c05946a71fa087dee6d614c0b4e4e0d",
-      "path": "skills/market-researcher",
-      "license": "MIT",
-      "licenseFile": "LICENSE"
-    },
-    {
       "name": "brand-guidelines",
       "stage": "design",
       "repo": "inbharatai/claude-skills",
@@ -226,7 +118,7 @@
     },
     {
       "name": "code-review",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "mattpocock/skills",
       "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
       "path": "skills/engineering/code-review",
@@ -235,7 +127,7 @@
     },
     {
       "name": "grill-me",
-      "stage": "validate",
+      "stage": "business",
       "repo": "mattpocock/skills",
       "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
       "path": "skills/productivity/grill-me",
@@ -244,7 +136,7 @@
     },
     {
       "name": "grilling",
-      "stage": "validate",
+      "stage": "business",
       "repo": "mattpocock/skills",
       "commit": "b0618bc436ad893b3c5e84e55fba86586d34a404",
       "path": "skills/productivity/grilling",
@@ -253,7 +145,7 @@
     },
     {
       "name": "code-review-skill",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "awesome-skills/code-review-skill",
       "commit": "4850184dfd7765ea7b3c5c4e9b6cf8e0815ee7cb",
       "path": ".",
@@ -270,7 +162,7 @@
     },
     {
       "name": "react-native-expert",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/react-native-expert",
@@ -279,7 +171,7 @@
     },
     {
       "name": "react-expert",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/react-expert",
@@ -288,7 +180,7 @@
     },
     {
       "name": "nextjs-developer",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/nextjs-developer",
@@ -297,7 +189,7 @@
     },
     {
       "name": "typescript-pro",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/typescript-pro",
@@ -306,7 +198,7 @@
     },
     {
       "name": "postgres-pro",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/postgres-pro",
@@ -315,7 +207,7 @@
     },
     {
       "name": "code-reviewer",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/code-reviewer",
@@ -324,7 +216,7 @@
     },
     {
       "name": "security-reviewer",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/security-reviewer",
@@ -333,7 +225,7 @@
     },
     {
       "name": "secure-code-guardian",
-      "stage": "build",
+      "stage": "frontend, backend",
       "repo": "jeffallan/claude-skills",
       "commit": "1be15d8064f88fc25216442406d40add8fd23b53",
       "path": "skills/secure-code-guardian",

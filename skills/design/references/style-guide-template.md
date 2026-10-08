@@ -42,7 +42,7 @@ For each of these, note its look and its states (default, pressed, disabled, foc
 
 ## `tokens.json`
 
-Use this structure. The build stage maps it into the app's theme, so keep the names stable once the founder approves the design.
+Use this structure. The frontend stage maps it into the app's theme, so keep the names stable once the founder approves the design.
 
 ```json
 {
