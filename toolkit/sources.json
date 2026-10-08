@@ -1,0 +1,228 @@
+{
+  "_comment": "Third-party skills bundled into this plugin. scripts/update-toolkit.sh copies each one from its pinned commit into skills/<name>. Change a commit here, rerun the script, and review the diff before merging.",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "stage": "design",
+      "repo": "anthropics/skills",
+      "commit": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+      "path": "skills/frontend-design",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "stage": "design",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "1a2c459b35f26116fd165b0a0f30597f252749ff",
+      "path": ".claude/skills/ui-ux-pro-max",
+      "license": "MIT",
+      "licenseFile": "LICENSE",
+      "exclude": [
+        "scripts/tests"
+      ]
+    },
+    {
+      "name": "apple-design-system",
+      "stage": "design",
+      "repo": "rukkiecodes/claude-apple-design-system",
+      "commit": "a7dc95044bef9d5636bb793d76f532621a15c77e",
+      "path": ".",
+      "license": "MIT",
+      "exclude": [
+        ".git",
+        "README.md"
+      ],
+      "description": "Apple Human Interface inspired design language (photography-first, single blue accent, pill buttons) with tokens and components for React Native and Expo. Use only when the app pipeline's design stage has chosen an Apple-style direction, or when the user asks for an Apple or iOS look."
+    },
+    {
+      "name": "refactoring-ui",
+      "stage": "design",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "refactoring-ui",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "ux-heuristics",
+      "stage": "design",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "ux-heuristics",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "ios-hig-design",
+      "stage": "design",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "ios-hig-design",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "web-typography",
+      "stage": "design",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "web-typography",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "microinteractions",
+      "stage": "design",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "microinteractions",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "drawio-skill",
+      "stage": "architect",
+      "repo": "Agents365-ai/drawio-skill",
+      "commit": "88fd9236bc532aac4c25cb008a8bd59bc650b904",
+      "path": "skills/drawio-skill",
+      "license": "MIT",
+      "allowModelInvocation": true
+    },
+    {
+      "name": "uat-testing",
+      "stage": "qa",
+      "repo": "ooiyeefei/ccc",
+      "commit": "c0fd92631a09e53eedcb9553f36c074cb0114ddd",
+      "path": "skills/uat-testing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "customer-research",
+      "stage": "discover",
+      "repo": "coreyhaines31/marketingskills",
+      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "path": "skills/customer-research",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "competitor-profiling",
+      "stage": "discover",
+      "repo": "coreyhaines31/marketingskills",
+      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "path": "skills/competitor-profiling",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "pricing",
+      "stage": "discover",
+      "repo": "coreyhaines31/marketingskills",
+      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "path": "skills/pricing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "product-marketing",
+      "stage": "discover",
+      "repo": "coreyhaines31/marketingskills",
+      "commit": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "path": "skills/product-marketing",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "mom-test",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "mom-test",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "jobs-to-be-done",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "jobs-to-be-done",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "monetizing-innovation",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "monetizing-innovation",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "lean-analytics",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "lean-analytics",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "blue-ocean-strategy",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "blue-ocean-strategy",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "obviously-awesome",
+      "stage": "discover",
+      "repo": "wondelai/skills",
+      "commit": "c172996495bed0fcd26896a9416b2093fd7073f0",
+      "path": "obviously-awesome",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "business-plan",
+      "stage": "discover",
+      "repo": "inbharatai/claude-skills",
+      "commit": "02077f8b2c05946a71fa087dee6d614c0b4e4e0d",
+      "path": "skills/business-plan",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "market-researcher",
+      "stage": "discover",
+      "repo": "inbharatai/claude-skills",
+      "commit": "02077f8b2c05946a71fa087dee6d614c0b4e4e0d",
+      "path": "skills/market-researcher",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "brand-guidelines",
+      "stage": "design",
+      "repo": "inbharatai/claude-skills",
+      "commit": "02077f8b2c05946a71fa087dee6d614c0b4e4e0d",
+      "path": "skills/brand-guidelines",
+      "license": "MIT",
+      "licenseFile": "LICENSE"
+    },
+    {
+      "name": "software-architecture",
+      "stage": "architect",
+      "repo": "thangchung/agent-engineering-experiment",
+      "commit": "2f0b7a161566755e325c5e3ceb094327aed7217c",
+      "path": "foundry-local-agent-fx/.github/skills/software-architecture",
+      "license": "MIT",
+      "licenseFile": "LICENSE",
+      "description": "Clean Architecture and Domain-Driven Design guidance (library-first, separation of domain and infrastructure, small focused modules), written with .NET/C# examples. Use in the app pipeline's architect stage when shaping the code structure, or when the user asks for architecture principles."
+    }
+  ]
+}
