@@ -31,8 +31,8 @@ Requires `validate` to be `approved`. Reads `docs/01-business-plan.md` and `docs
 | Style guide | `refactoring-ui`, `web-typography` | Hierarchy, spacing, colour, and type scales |
 | Mockups | `ios-hig-design` | iPhone conventions (navigation, safe areas, tap targets) for mobile apps |
 | Mockups | `microinteractions` | Feedback, transitions, and small moments of delight on key actions |
-| Mockups | `threejs-skills` (optional plugin) | Only when a web app needs a 3D scene, such as a product viewer |
-| Review | `impeccable` (optional plugin) | Its critique, audit, and polish commands on each mockup, if installed |
+| Mockups | `threejs-skills` (extra plugin) | Only when a web app needs a 3D scene, such as a product viewer |
+| Review | `impeccable` (extra plugin) | Its critique, audit, and polish commands on each mockup, if installed |
 | Review | `ux-heuristics` | A usability pass against Nielsen's heuristics, alongside the critique and accessibility checks |
 
 When a specialist skill and `anti-generic-rules.md` disagree, the anti-generic rules win.

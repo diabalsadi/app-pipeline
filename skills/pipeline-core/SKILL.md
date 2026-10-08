@@ -30,6 +30,8 @@ Detect which environment you are in and use the matching storage:
 - **Claude Code (or any session with a working folder):** one folder per app project. Outputs go in `docs/` inside it, and the state file is `pipeline/state.json`. Create the folders if they are missing.
 - **Claude Project on claude.ai (no shared folder):** each output is a document or file you hand the founder. Ask them to add it to the Project's files so later stages can read it. Keep the state as a short "Pipeline status" document in the same format as `state.json`, and give the founder the updated version after every approval.
 
+From stage 5 on, the working folder is the app's own repo: setup copies `docs/` and `pipeline/` into it, and every later change to them goes through a pull request. Stages 5 to 7 need Claude Code, because they run commands and push code.
+
 When an earlier output is needed and you cannot find it, ask the founder for it rather than guessing its contents.
 
 ## Project state
@@ -52,7 +54,7 @@ Every stage ends at a gate, and nothing moves on without the founder's explicit 
 
 ## Specialist skills
 
-Each stage names specialist skills bundled with this plugin (listed in `THIRD_PARTY_NOTICES.md`). Load one when its step comes up. They supply method and depth, while the stage skill stays in charge:
+Each stage names specialist skills: most are bundled with this plugin (listed in `THIRD_PARTY_NOTICES.md`), and some come from the extra plugins that `app-pipeline-full` installs. Load one when its step comes up. They supply method and depth, while the stage skill stays in charge:
 
 - The stage's templates, file locations, and approval gate always win. A specialist skill's output is folded into the stage's own files, not saved somewhere else.
 - The founder rules below still apply, so translate a specialist skill's jargon before it reaches the founder.

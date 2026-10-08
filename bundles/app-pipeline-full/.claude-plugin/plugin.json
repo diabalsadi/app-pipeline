@@ -1,0 +1,39 @@
+{
+  "name": "app-pipeline-full",
+  "version": "0.1.0",
+  "description": "The app pipeline with every specialist plugin: installs app-pipeline plus all 26 extra plugins from this marketplace.",
+  "author": {
+    "name": "Diab Al Sadi"
+  },
+  "repository": "https://github.com/diabalsadi/app-pipeline",
+  "license": "UNLICENSED",
+  "dependencies": [
+    "app-pipeline",
+    "impeccable",
+    "threejs-skills",
+    "product-strategy",
+    "ux-design",
+    "marketing-cro",
+    "sales-influence",
+    "product-innovation",
+    "strategy-growth",
+    "team-motivation",
+    "code-craftsmanship",
+    "systems-architecture",
+    "metaskills",
+    "document-skills",
+    "example-skills",
+    "marketing-skills",
+    "ccc-skills",
+    "differential-review",
+    "insecure-defaults",
+    "static-analysis",
+    "supply-chain-risk-auditor",
+    "sharp-edges",
+    "fp-check",
+    "spec-to-code-compliance",
+    "fullstack-dev-skills",
+    "mattpocock-skills",
+    "qa-skills"
+  ]
+}

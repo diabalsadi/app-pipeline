@@ -9,6 +9,14 @@ Turn the approved business plan into requirements with no gaps. The screen list 
 
 Requires the `discover` stage to be `approved`, and reads `docs/01-business-plan.md`.
 
+## Specialist skills
+
+| Step | Skill | Use it for |
+| --- | --- | --- |
+| Validate | `grilling` | Interrogating the draft requirements branch by branch until every decision is pinned down. Grill the document yourself first; put to the founder only the questions you cannot answer from the business plan, one at a time and in plain words |
+
+The founder can also run `/grill-me` at any point to be interviewed about the plan.
+
 ## Steps
 
 ### 1. Draft the requirements
