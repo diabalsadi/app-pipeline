@@ -109,22 +109,25 @@ The `dist/` folder is not committed. Some extras (`threejs-skills`, which publis
 ## Layout
 
 ```
-.claude-plugin/   plugin and marketplace manifests
-commands/         one slash command per stage, plus /status
-skills/
-  pipeline-core/  shared rules: stage order, state file, approval gates, founder communication
-  business/       stage 1 (runs op-business-documentation)
-  authenticity/   stage 2 (runs op-authenticity)
-  design/         stage 3
-  architect/      stage 4
-  setup/          stage 5
-  frontend/       stage 6
-  backend/        stage 7
-  qa/             stage 8
-  op-business-documentation/  the OP business documentation standard
-  op-authenticity/            the OP Authenticity process, library and scripts
-  <others>/       bundled third-party skills (see THIRD_PARTY_NOTICES.md)
-bundles/          app-pipeline-full, which installs the pipeline plus every extra plugin
+.claude-plugin/   the marketplace manifest
+plugins/
+  app-pipeline/       the pipeline plugin
+    .claude-plugin/   plugin manifest
+    commands/         one slash command per stage, plus /status
+    skills/
+      pipeline-core/  shared rules: stage order, state file, approval gates, founder communication
+      business/       stage 1 (runs op-business-documentation)
+      authenticity/   stage 2 (runs op-authenticity)
+      design/         stage 3
+      architect/      stage 4
+      setup/          stage 5
+      frontend/       stage 6
+      backend/        stage 7
+      qa/             stage 8
+      op-business-documentation/  the OP business documentation standard
+      op-authenticity/            the OP Authenticity process, library and scripts
+      <others>/       bundled third-party skills (see THIRD_PARTY_NOTICES.md)
+  app-pipeline-full/  installs the pipeline plus every extra plugin
 toolkit/          pinned sources for the bundled skills and the extra plugins
 scripts/          packaging for claude.ai, and the toolkit updater
 docs/             the blueprint

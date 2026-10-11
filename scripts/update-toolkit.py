@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Copy the third-party skills listed in toolkit/sources.json into skills/<name>.
+"""Copy the third-party skills listed in toolkit/sources.json into plugins/app-pipeline/skills/<name>.
 
 Each skill is fetched from its pinned commit, so a rerun with an unchanged
 manifest produces no diff. After copying, the script applies the small edits
@@ -19,8 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "toolkit" / "sources.json"
 EXTRAS = ROOT / "toolkit" / "extras.json"
 MARKETPLACE = ROOT / ".claude-plugin" / "marketplace.json"
-FULL = ROOT / "bundles" / "app-pipeline-full" / ".claude-plugin" / "plugin.json"
-SKILLS = ROOT / "skills"
+CORE_DIR = ROOT / "plugins" / "app-pipeline"
+FULL = ROOT / "plugins" / "app-pipeline-full" / ".claude-plugin" / "plugin.json"
+SKILLS = CORE_DIR / "skills"
 NOTICES = ROOT / "THIRD_PARTY_NOTICES.md"
 
 
