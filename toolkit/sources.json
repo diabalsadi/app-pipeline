@@ -383,7 +383,8 @@
       "commit": "b3bb61bd268b147476252c6ed5a0440c87b97441",
       "path": "skills/bug-reproduction",
       "license": "MIT",
-      "licenseFile": "LICENSE"
+      "licenseFile": "LICENSE",
+      "description": "Turn a vague bug report into a verified minimal reproduction and then a failing regression test. Covers extracting the implicit repro from a thin report (environment, build, steps, data), the reproduce, minimize, isolate and capture loop, git bisect to find the introducing commit, building a deterministic repro (fixed seeds, frozen time, stubbed network), writing the failing test before the fix and confirming the fix turns it green, and writing the evidence back into the ticket. Use for: reproduce this bug, minimal reproduction, repro steps, find the commit that broke it, git bisect, write a failing test for this bug, can't reproduce. Not for classifying or ranking existing failures (use ai-bug-triage) or debugging a known cause (use debugging-wizard)."
     },
     {
       "name": "ai-bug-triage",
