@@ -15,7 +15,7 @@ A Claude pipeline that takes a non-technical founder from an idea to a tested we
 
 Every stage refers back to the business documents and ends with your approval.
 
-`/status` shows where a project is and what is waiting on the founder.
+`/status` shows where a project is and what is waiting on the founder. `/pipeline <stage>` (or `pipeline <stage>` in plain words where slash commands are not available, such as claude.ai) runs any stage by name, and `pipeline next` runs the next one.
 
 The full design is in [docs/blueprint.md](docs/blueprint.md).
 
@@ -115,6 +115,7 @@ plugins/
     .claude-plugin/   plugin manifest
     commands/         one slash command per stage, plus /status
     skills/
+      pipeline/       front door: run a stage by name, or the next one
       pipeline-core/  shared rules: stage order, state file, approval gates, founder communication
       business/       stage 1 (runs op-business-documentation)
       authenticity/   stage 2 (runs op-authenticity)
